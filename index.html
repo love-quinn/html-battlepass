@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem Vindo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-[#0E0E0E] text-white px-10 pt-10 w-full h-full">
+    <!-- Header -->
+    <div class="header flex items-center justify-center">
+        <!-- Items -->
+         <div class="uppercase flex gap-3 text-xl text-[#81E900] whitespace-nowrap pe-6">
+            <h2 class="lettered border-b-2 border-[#81E900]">Battle Pass</h2>
+            <h2>Roleta Lendária</h2>
+            <h2>Presente Diário</h2>
+        </div>
+        <!-- Line -->
+         <hr class="border-t-[1px] border-[#303030] flex-grow"></hr>
+         <!-- Items -->
+          <div class="text-[#81E900] px-6 flex items-center gap-2">
+
+            <i data-lucide="rotate-ccw" height="28" width="28" stroke-width="1.4"></i>
+
+            <div>
+            <h4 class="uppercase ">
+                Termina em:
+              </h4>
+              <h3 class="text-2xl lettered">
+                29d 20h 26m
+              </h3>
+            </div>
+
+          </div>
+    </div>
+
+    <img class="absolute" src="./images/persona.svg" alt="Persona">
+    <div class="w-full flex flex-col items-center mt-10">
+
+        <!--Status Card -->
+         <div class="flex bg-neutral-800 p-4 rounded-lg items-center gap-4 border-[1px] border-[#A2F935]">
+            <img src="./images/avatar-persona.png" alt="">
+            <h5 class="card-main drop-shadow-md ">Samuel Santana</h6>
+
+                <p class="relative">
+                    Tipo de conta: 
+                    <span class="text-[#81E900] font-semibold relative">
+                      Premium
+                      <!-- Neon Blur Effect -->
+                      <span class="absolute top-0 left-0 w-full h-full blur-lg text-[#81E900] opacity-75 ">
+                        Premium
+                      </span>
+                    </span>
+                  </p>
+         </div>
+
+         <div class="absolute w-1/2 right-56 top-64">
+          <div class="flex w-full gap-12 overflow-x-auto px-5 [&::-webkit-scrollbar]:hidden relative justify-start">
+            <div class="flex flex-col card-container">
+
+            
+            <div class="regular-flex flex bg-neutral-800 items-center justify-center gap-[70px]">
+            <!-- Regular Card -->
+                <div class="mt-10 flex flex-col items-center justify-center gap-2">
+                    
+                    <div class="bg-zinc-800 p-3 rounded-md regular-card">
+                      <img src="./images/towel.png" alt="">
+                    </div>
+
+                    <div class="flex gap-2 items-center">
+                      <i data-lucide="check" height="18" width="18" stroke-width="1.4"></i>
+                      <p>
+                        Level 1
+                      </p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Premium Card -->
+            <div id="flex premium-card">
+              <div class="mt-10 flex flex-col items-center gap-3">
+                  
+                  <div class="bg-zinc-800 p-3 rounded-md premium-card relative border-2 border-black">
+                    <h2 class="bg-black rounded-lg text-center">
+                      Premium
+                    </h2>
+                    <img src="./images/towel.png" alt="">
+                  </div>
+
+                  <div class="flex gap-2 items-center">
+                    <i class="text-blue-600" data-lucide="badge-check" height="24" width="24" stroke-width="1.4"></i>
+                    <p>
+                      Level 1
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          </div>
+        </div>
+
+
+
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
