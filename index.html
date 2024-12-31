@@ -6,6 +6,7 @@
     <title>Bem Vindo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./script.js" defer></script>
+
     <link rel="stylesheet" href="./style.css">
 </head>
 <body class="bg-[#0E0E0E] text-white px-10 pt-10 w-full h-full">
@@ -14,16 +15,15 @@
         <!-- Items -->
          <div class="uppercase flex gap-3 text-xl text-[#81E900] whitespace-nowrap pe-6">
             <h2 class="lettered border-b-2 border-[#81E900]">Battle Pass</h2>
-            <h2>Roleta Lendária</h2>
-            <h2>Presente Diário</h2>
+            <a href="./roulette.html"><h2 class="hover:text-gray-100/90">Roleta Lendária</h2></a>
+            <a href="./roulette.html"><h2 class="hover:text-gray-100/90">Presente Diário</h2></a>
         </div>
         <!-- Line -->
          <hr class="border-t-[1px] border-[#303030] flex-grow"></hr>
          <!-- Items -->
           <div class="text-[#81E900] px-6 flex items-center gap-2">
 
-            <i data-lucide="rotate-ccw" height="28" width="28" stroke-width="1.4"></i>
-
+            <img height="28" width="28" src="./images/rotate-ccw.svg"></i>
             <div>
             <h4 class="uppercase ">
                 Termina em:
@@ -56,62 +56,53 @@
                   </p>
          </div>
 
-         <div class="absolute w-1/2 right-56 top-64">
-          <div class="flex w-full gap-12 overflow-x-auto px-5 [&::-webkit-scrollbar]:hidden relative justify-start">
-            <div class="flex flex-col card-container">
+         <div class="absolute w-1/2 right-60 top-64">
+           <button id="left-button" class="absolute top-64 -left-20 bg-zinc-900 hover:bg-zinc-800 transition-transform rounded-lg px-2 py-1">
+            <img src="./images/chevron-left.svg" alt="">
+           </button>
 
-            
-            <div class="regular-flex flex bg-neutral-800 items-center justify-center gap-[70px]">
-            <!-- Regular Card -->
-                <div class="mt-10 flex flex-col items-center justify-center gap-2">
-                    
-                    <div class="bg-zinc-800 p-3 rounded-md regular-card">
-                      <img src="./images/towel.png" alt="">
-                    </div>
-
-                    <div class="flex gap-2 items-center">
-                      <i data-lucide="check" height="18" width="18" stroke-width="1.4"></i>
-                      <p>
-                        Level 1
-                      </p>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <!-- Premium Card -->
-            <div id="flex premium-card">
-              <div class="mt-10 flex flex-col items-center gap-3">
-                  
-                  <div class="bg-zinc-800 p-3 rounded-md premium-card relative border-2 border-black">
-                    <h2 class="bg-black rounded-lg text-center">
-                      Premium
-                    </h2>
-                    <img src="./images/towel.png" alt="">
-                  </div>
-
-                  <div class="flex gap-2 items-center">
-                    <i class="text-blue-600" data-lucide="badge-check" height="24" width="24" stroke-width="1.4"></i>
-                    <p>
-                      Level 1
-                    </p>
-                  </div>
+          <div id="cards-roulette" class="flex w-full gap-12 overflow-x-auto px-5 [&::-webkit-scrollbar]:hidden relative items-center justify-start">
+            <div class="flex flex-col card-container gap-6">
+              <!-- Regular Cards Container -->
+              <div id="regular-cards-container" class="mt-10 flex text-white items-center justify-center gap-[70px]">
+              
               </div>
+
+
+              <!-- Premium Card Container -->
+              <div id="premium-cards-container" class="flex gap-[70px] items-center justify-center">
+                
+              </div>
+
+
             </div>
+          </div>
+          
+          <button id="right-button" class="absolute top-64 -right-20 bg-zinc-900 hover:bg-zinc-800 transition-transform rounded-lg px-2 py-1">
+            <img src="./images/chevron-right.svg" alt="">
+          </button>
 
+          <!-- Level Indicator -->
+          <div class="mt-20 ps-8">
+            <p class="text-lg">
+            <span class="lettered text-lg">Level 1</span>
+            / 30
+            </p>
+
+            <!-- Progress indicator -->
+              <progress class="w-full rounded" value="3.333" max="100">
+                <span class="bg-green-600" style="width: 50%; display: block;"></span>
+              </progress>
+              <div class="flex justify-between w-full">
+              <p class="lettered">100XP</p>
+              <p>1000XP</p>
+              </div>
 
           </div>
-
-          </div>
+          
         </div>
 
 
-
     </div>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-        lucide.createIcons();
-    </script>
 </body>
 </html>

@@ -34,4 +34,26 @@ body {
 
 .premium-card {
     background: linear-gradient(180deg, rgba(109, 197, 0, 0.50) 0%, #000 100%);
+    width: 150px;
+    height: 170px;
+}
+
+progress {
+    appearance: none; /* Remove default styling */
+    width: 100%; /* Ensure it takes full width */
+    height: 10px; /* Set height */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #303030; /* Background color */
+}
+
+progress::-webkit-progress-bar {
+    background-color: #303030; /* Background color for the progress bar */
+    border-radius: 10px; /* Rounded corners */
+    padding: 3px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #81E900; /* Color of the progress value */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(129, 233, 0, .5), 0 0 20px rgba(129, 233, 0, .5); /* Neon shadow effect */
 }
