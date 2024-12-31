@@ -38,6 +38,13 @@ body {
     height: 170px;
 }
 
+.locked-card {
+    background: linear-gradient(180deg, rgba(109, 197, 0, 0.50) 0%, #000 100%);
+    opacity: 50%;
+    width: 150px;
+    height: 170px;
+}
+
 progress {
     appearance: none; /* Remove default styling */
     width: 100%; /* Ensure it takes full width */
