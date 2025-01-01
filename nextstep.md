@@ -10,3 +10,4 @@
     [x] Fazer barra de progresso
     [x] Adicionar anchor tag para outras páginas
     [x] Mudar header dinâmicamente para cada página selecionada
+    [x] Exibir alert quando roleta parar
