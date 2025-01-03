@@ -20,6 +20,7 @@
 03.01.2025
     [x] Fazer design de card com imagens de items
     [x] Fazer design modal de resultado da roletta
-    [] Criar objeto com imagem, nome e cor de card
-    [] Atualizar design frontend com nome de items
+    [x] Criar objeto com imagem, nome e cor de card
+    [x] Atualizar design frontend com nome de items
+    [] Deixar script de roleta dinamico var order line 65
     [] Criar modal
