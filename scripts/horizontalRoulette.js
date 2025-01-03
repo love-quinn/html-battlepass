@@ -53,11 +53,12 @@ function spinWheel(roll){
       position = order.indexOf(roll);
             
   //determine position where to land
+  var cardSizeInPixels = Number(100);
   var rows = 12,
-  		card = 75 + 3 * 2,
+  		card = cardSizeInPixels + 3 * 2,
       landingPosition = (rows * 15 * card) + (position * card);
   	
-  var randomize = Math.floor(Math.random() * 75) - (75/2);
+  var randomize = Math.floor(Math.random() * cardSizeInPixels) - (cardSizeInPixels/2);
     
   landingPosition = landingPosition + randomize;
     
