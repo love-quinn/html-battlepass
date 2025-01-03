@@ -18,5 +18,8 @@
     [x]Integrar com design do battle pass
 
 03.01.2025
-    [] Fazer design de card com imagens de items
-    [] Fazer design modal de resultado da roletta
+    [x] Fazer design de card com imagens de items
+    [x] Fazer design modal de resultado da roletta
+    [] Criar objeto com imagem, nome e cor de card
+    [] Atualizar design frontend com nome de items
+    [] Criar modal

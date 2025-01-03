@@ -16,24 +16,37 @@ $(document).ready(function() {
 function initWheel(){
 	var $wheel = $('.roulette-wrapper .wheel'),
   		row = "";
-      
-  row += "<div class='row'>";
-  row += "  <div class='card red'>1<\/div>";
-  row += "  <div class='card black'>14<\/div>";
-  row += "  <div class='card red'>2<\/div>";
-  row += "  <div class='card black'>13<\/div>";
-  row += "  <div class='card red'>3<\/div>";
-  row += "  <div class='card black'>12<\/div>";
-  row += "  <div class='card red'>4<\/div>";
-  row += "  <div class='card green'>0<\/div>";
-  row += "  <div class='card black'>11<\/div>";
-  row += "  <div class='card red'>5<\/div>";
-  row += "  <div class='card black'>10<\/div>";
-  row += "  <div class='card red'>6<\/div>";
-  row += "  <div class='card black'>9<\/div>";
-  row += "  <div class='card red'>7<\/div>";
-  row += "  <div class='card black'>8<\/div>";
-  row += "<\/div>";
+
+	// Define card data
+	const cards = [
+		{ id: 1, name: '1', color: 'red', img: './images/towel.png' },
+		{ id: 14, name: '14', color: 'black', img: './images/phone.png' },
+		{ id: 2, name: '2', color: 'red', img: './images/towel.png' },
+		{ id: 13, name: '13', color: 'black', img: './images/phone.png' },
+		{ id: 3, name: '3', color: 'red', img: './images/towel.png' },
+		{ id: 12, name: '12', color: 'black', img: './images/phone.png' },
+		{ id: 4, name: '4', color: 'red', img: './images/towel.png' },
+		{ id: 0, name: '0', color: 'green', img: './images/towel.png' },
+		{ id: 11, name: '11', color: 'black', img: './images/phone.png' },
+		{ id: 5, name: '5', color: 'red', img: './images/towel.png' },
+		{ id: 10, name: '10', color: 'black', img: './images/phone.png' },
+		{ id: 6, name: '6', color: 'red', img: './images/towel.png' },
+		{ id: 9, name: '9', color: 'black', img: './images/phone.png' },
+		{ id: 7, name: '7', color: 'red', img: './images/towel.png' },
+		{ id: 8, name: '8', color: 'black', img: './images/phone.png' }
+	];
+
+	// Generate rows dynamically
+	cards.forEach(card => {
+		row += `<div class='flex flex-col justify-center items-center'>
+					<div class='card ${card.color} flex flex-col gap-0'>
+						<img class='w-2/3' src='${card.img}'></img>
+					</div>
+					<p class='text-2xl'>${card.name}</p>
+				</div>`;
+	});
+
+	row = `<div class='row'>${row}</div>`;
   
 	for(var x = 0; x < 29; x++){
   	$wheel.append(row);
@@ -53,7 +66,7 @@ function spinWheel(roll){
       position = order.indexOf(roll);
             
   //determine position where to land
-  var cardSizeInPixels = Number(100);
+  var cardSizeInPixels = Number(120);
   var rows = 12,
   		card = cardSizeInPixels + 3 * 2,
       landingPosition = (rows * 15 * card) + (position * card);
@@ -69,7 +82,7 @@ function spinWheel(roll){
   
   $wheel.css({
 		'transition-timing-function':'cubic-bezier(0,'+ object.x +','+ object.y + ',1)',
-		'transition-duration':'10s',
+		'transition-duration':'9s',
 		'transform':'translate3d(-'+landingPosition+'px, 0px, 0px)'
 	});
   
@@ -84,5 +97,5 @@ function spinWheel(roll){
 
     // Re-enable the button after the spin is over
     $('button').prop('disabled', false);
-  }, 10 * 1000);
+  }, 9 * 1000);
 }
