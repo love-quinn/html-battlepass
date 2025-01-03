@@ -16,3 +16,7 @@
     [x]Adicionar roletta funcional
     [x]Adicionar roleta horizontal funcional
     [x]Integrar com design do battle pass
+
+03.01.2025
+    [] Fazer design de card com imagens de items
+    [] Fazer design modal de resultado da roletta
