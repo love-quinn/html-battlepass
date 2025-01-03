@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem Vindo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./scripts/roullete.js" defer></script>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/roulette.css">
+</head>
+<body class="bg-[#0E0E0E] text-white px-10 pt-10 w-full h-full">
+    <!-- Header -->
+    <div class="header flex items-center justify-center">
+        <!-- Items -->
+         <div class="uppercase flex gap-3 text-xl text-[#81E900] whitespace-nowrap pe-6">
+          <a href="./index.html"><h2 class="hover:text-gray-100/90">Battle Pass</h2></a>
+          <h2 class="lettered border-b-2 border-[#81E900]">Roleta Lendária</h2>
+          <a href="./daily-gift.html"><h2 class="hover:text-gray-100/90">Presente Diário</h2></a>
+        </div>
+        <!-- Line -->
+         <hr class="border-t-[1px] border-[#303030] flex-grow"></hr>
+         <!-- Items -->
+          <div class="text-[#81E900] px-6 flex items-center gap-2">
+
+            <img height="28" width="28" src="./images/crown.svg"></i>
+            <div>
+                <h3 class="text-2xl lettered">
+                    250
+                </h3>
+            </div>
+
+          </div>
+    </div>
+
+    <div class="w-full flex flex-col items-center mt-10">
+
+      <h1 class="text-5xl mt-3 font-bold">Roleta Lendária</h1>
+
+      <!-- Arrow up -->
+      <div class="my-3">
+        <img src="./images/chevron-down.svg" height="38" width="38" alt="Chevron Down">
+      </div>
+
+      <!-- Roulette -->
+      <div class="compsoul-body">
+        <input class="compsoul-roulette-checkbox hidden" id="compsoul-roulette-checkbox" type="checkbox" name="compsoul-roulette-checkbox">
+        <label class="compsoul-roulette-label" for="compsoul-roulette-checkbox"></label>
+        <div class="compsoul-roulette">
+          <ul class="roulette-list">
+            <li class="roulette-item">Teste 1</li>
+            <li class="roulette-item">Teste 2</li>
+            <li class="roulette-item">Teste 3</li>
+            <li class="roulette-item">Teste 4</li>
+            <li class="roulette-item">Teste 5</li>
+            <li class="roulette-item">Teste 6</li>
+            <li class="roulette-item">Teste 7</li>
+            <li class="roulette-item">Teste 8</li>
+            <li class="roulette-item">Teste 9</li>
+            <li class="roulette-item">Teste 10</li>
+            <li class="roulette-item">Teste 11</li>
+            <li class="roulette-item">Teste 12</li>
+          </ul>
+          <div class="roulette-marker"></div>
+        </div>
+      </div>
+
+      <!-- Arrow down -->
+      <div class="my-3">
+        <img src="./images/chevron-up.svg" height="38" width="38" alt="Chevron Down">
+      </div>
+         
+      <button id="spinbutton" class="mt-3 text-lg bg-black px-4 py-2 rounded-lg uppercase text-[#81E900] hover:bg-zinc-950 transition-transform">
+        Girar
+      </button>
+
+      <div class="flex gap-2 mt-4 items-center">
+        <p class="uppercase text-gray-300">Custo:</p>
+        <div class="flex items-center justify-center gap-2">
+          <img height="20" width="20" src="./images/crown.svg"></i>
+          <p class="uppercase text-[#81E900]">25 Coroas</p>
+        </div>
+      </div>
+
+      <div class="bg-black rounded-lg px-4 py-4 flex items-center justify-center gap-4 mt-8">
+        <button class="uppercase bg-[#81E900] px-2 py-1 rounded-lg flex items-center justify-center">RECARGA</button>
+        OBTENHA COROAS PARA RECEBER PRÊMIOS EXCLUSIVOS DA NOSSA ROLETA LENDÁRIA
+      </div>
+
+
+    </div>
+</body>
+</html>

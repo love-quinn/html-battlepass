@@ -1,0 +1,53 @@
+body {
+    background-color: #333;
+}
+
+.header {
+    padding: 40px;
+    color: #FFF;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.header h1, p {
+    text-align: center;
+}
+
+.wheel {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.center-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    background-color: #FFF;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.triangle{
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid red; 
+    position: absolute;
+    top: -220%;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+textarea {
+    background-color: rgba(20, 20, 20, 0.2);
+    color: #FFF;
+}
+
+.input-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}

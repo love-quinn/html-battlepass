@@ -11,3 +11,8 @@
     [x] Adicionar anchor tag para outras páginas
     [x] Mudar header dinâmicamente para cada página selecionada
     [x] Exibir alert quando roleta parar
+
+02.01.2025
+    [x]Adicionar roletta funcional
+    [x]Adicionar roleta horizontal funcional
+    [x]Integrar com design do battle pass

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Roulette</title>
+    <link rel="stylesheet" href="./styles/base-roulette.css">
+    <script src="./scripts/baseRoulette.js" defer></script>
+
+</head>
+<body>
+    <div class="header">
+        <h1>Roleta!</h1>
+        <p id="winner">NONE</p>
+    </div>
+    <div class="wheel">
+        <canvas class="" id="canvas" width="500" height="500"></canvas>
+        <div class="center-circle" onclick="spin()">
+            <div class="triangle"></div>
+        </div>
+    </div>
+
+    <div class="input-area" onchange="createWheel()">
+        <textarea rows="20" cols="30">cat
+dog
+cow
+duck
+sheep
+goat
+bird
+neko
+chicken
+        </textarea>
+    </div>
+</body>
+</html>
